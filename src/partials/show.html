@@ -1,0 +1,18 @@
+<container>
+  <div class="row">
+    <div class="singleTitle four offset-by-four columns">
+      <h2>{{ movieResult.Title }}</h2>
+      <img ng-src="{{ movieResult.Poster }}">
+    </div>
+  </div>
+  <div class="row">
+    <div class="singleInfo eight offset-by-two columns">
+      <p>Genre: {{ movieResult.Genre }}</p>
+      <p>Released: {{ movieResult.Released }}</p>
+      <p>Director: {{ movieResult.Director }}</p>
+      <p>Actors: {{ movieResult.Actors }}</p>
+      <p>Plot: {{ movieResult.Plot }}</p>
+    </div>
+  </div>
+  <a class="goHome" href="/#/">Return Home</a>
+</container>

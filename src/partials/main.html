@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="title">
+    <h1 class="appTitle">Search for Movies!</h1>
+    <h1 class="appTitle"><i class="fa fa-film"></i></h1>
+  </div>
+  <div class="row">
+    <div class="movieSearch four offset-by-four columns">
+      <label for="movie">Enter a movie title here:</label>
+      <form ng-submit="searchMovies()">
+        <input class="u-full-width" type="text" placeholder="Movie Title" id="movie" ng-model="movie">
+        <button class="u-full-width" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div ng-repeat="movie in allMovies">
+    <div class="eachMovie four columns">
+    <div class="content">
+      <h5 class="movieTitle">{{movie.Title}}</h5>
+      <a ng-href="/#/{{movie.imdbID}}">Check it out</a>
+      <img class="movieImg" ng-src="{{movie.Poster}}">
+    </div>
+    </div>
+  </div>
+</div>
