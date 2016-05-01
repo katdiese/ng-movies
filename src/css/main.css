@@ -50,6 +50,10 @@ a {
   border-radius: 3px;
   margin: 10px;
 }
+.singleImage {
+  width: 80%;
+  margin-left: 10%;
+}
 .goHome {
   margin: 30px;
 }

@@ -11,9 +11,7 @@ app.controller('moviesController',
 }]);
 
 app.controller('singleMovieController', ['$scope', '$routeParams', 'moviesService', function($scope, $routeParams, moviesService) {
-  $scope.message = "blah";
   $scope.singleMovie = function(movie) {
-    console.log('here');
     moviesService.singleMovie(movie).then(function(result) {
       $scope.movieResult = result.data;
     })
